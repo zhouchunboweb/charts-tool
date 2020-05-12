@@ -1,0 +1,136 @@
+html,
+body {
+    height: 100%;
+}
+
+body,
+div,
+p,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+input,
+lable,
+textarea,
+button,
+pre,
+blockquote,
+img,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+
+address,
+caption,
+cite,
+code,
+dfn,
+i,
+ins {
+    font-style: normal;
+    font-weight: normal;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+table {
+    border-spacing: 0;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Microsoft YaHei', 'SimSun';
+    word-break: break-all;
+    // overflow: hidden;
+}
+
+.ui-widget {
+  font-family: 'Microsoft YaHei', 'SimSun';
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    outline: none;
+}
+
+button,
+input {
+    outline: none;
+    line-height: normal;
+}
+/* a标签链接 */
+
+a {
+  outline: none;
+  &:link,
+  &:visited {
+      text-decoration: none;
+  }
+  ;
+  &:focus {
+      outline-style: none;
+      -moz-outline-style: none;
+  }
+  ;
+  &:hover,
+  &:active {
+      text-decoration: none;
+      outline: 0;
+  }
+  ;
+}
+
+.show {
+  display: block !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+
+/* 文字溢出省略 */
+.ell {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* 清除浮动 */
+
+.clear {
+  clear: both;
+  overflow: hidden; // height: 0;
+  &:after {
+      clear: both;
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      height: 0;
+      content: ".";
+  }
+}
